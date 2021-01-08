@@ -1,0 +1,11 @@
+[Unit]
+Description=Concatman will conncat string
+
+[Service]
+User={{USER}}
+WorkingDirectory={{WORKING_DIR}}
+ExecStart={{WORKING_DIR}}/bin/concatman
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

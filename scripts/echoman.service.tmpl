@@ -1,0 +1,11 @@
+[Unit]
+Description=Echoman will echo string
+
+[Service]
+User={{USER}}
+WorkingDirectory={{WORKING_DIR}}
+ExecStart={{WORKING_DIR}}/bin/echoman
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
